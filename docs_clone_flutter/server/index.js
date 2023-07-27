@@ -6,6 +6,7 @@ const PORT  = process.env.PORT | 3001;
 
 const app = express();
 
+app.use(express.json());
 app.use(authRouter);
 
 const DB= "mongodb+srv://rubayet211:NatsuandZeref@cluster0.jciudgm.mongodb.net/?retryWrites=true&w=majority";
